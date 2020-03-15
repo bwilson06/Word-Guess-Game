@@ -1,0 +1,120 @@
+* body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/assets/images/congruent_pentagon.png");
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.gif{
+    display: flex;
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    border-width: 10px;
+    border-color: black;
+    border-style: ridge;
+}
+
+.container{
+    display: flex;
+    
+    
+    
+}
+
+.column-left{
+    text-align: center;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #A1FFB9;
+    height: 800px;
+    border-width: 10px;
+    border-color: black;
+    border-style: ridge;
+
+    
+}
+
+.column-right{
+    width: 30%;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: #A1FFB9;
+    height: 800px;
+    border-width: 10px;
+    border-color: black;
+    border-style: ridge;
+    
+}
+
+.image-one{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-width: 4px;
+    border-color: black;
+    border-style: ridge;
+    width: 80%;
+    height: 300px;
+}
+
+.hangman-header{
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+    letter-spacing: 16px;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.rules{
+    margin-left: 17.6px;
+    margin-right: 17.6px;
+    letter-spacing: 4px;
+    margin-top: 36px;
+    font-size: 26px;
+    font-family: monospace;
+
+}
+
+.input-header{
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+
+#change {
+    margin-left: 17.6px;
+    margin-right: 17.6px;
+    letter-spacing: 4px;
+    margin-top: 80px;
+    font-size: 26px;
+    font-family: monospace;
+    max-width: 20px;
+
+}
+
+#randomword {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.input-header-two{
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+    letter-spacing: 4px;
+    margin-top: 87px;
+    font-size: 30px;
+    font-family: monospace;
+}
