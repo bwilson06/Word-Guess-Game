@@ -76,6 +76,7 @@ var words = ['lucky', 'clover', 'drunk', 'ireland', 'march', 'gold', 'rainbow', 
           losses ++;
           alert('Try again!')
           alert('losses: ' + losses)
+          document.getElementById('guesses').innerHTML = 6;
           resetGame();
           
         }
