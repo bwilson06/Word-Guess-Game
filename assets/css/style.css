@@ -1,7 +1,7 @@
 * body{
     margin: 0;
     padding: 0;
-    background-image: url(/assets/images/congruent_pentagon.png);
+    background-image: url("/assets/images/congruent_pentagon.png");
     background-attachment: fixed;
     width: 100%;
 }
