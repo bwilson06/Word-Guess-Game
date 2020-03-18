@@ -1,4 +1,4 @@
-var words = ['lucky', 'clover', 'drunk', 'ireland', 'march', 'gold', 'rainbow', 'shamrock', 'ale', 'party', 'fortune', 'holiday', 'dublin', 'magic', 'patrick', 'saint', 'day'];
+var words = [{ word: 'lucky', hint: 'You have to be this to win the lottery'},{word:'clover', hint: 'Can have 4 leaves'},{word: 'drunk', hint: 'I was this on my 21st'}, {word: 'ireland', hint: 'Republic of (blank)'}, {word: 'march', hint: 'Justin Beaver was born in (blank)'}, {word: 'gold', hint: 'You can find this at the end of a rainbow'}, {word: 'shamrock', hint: 'You can get this flavor of shake seasonally at McDonalds'}, {word: 'rainbow', hint: 'Phenomena that happens when it rains'}, {word: 'party', hint: 'Live the life of the (blank)'}, {word: 'holiday', hint: 'St. Patricks day is a (blank)'}];
     let change = document.getElementById('change');
     let guess = document.getElementById('guesses')
     let rightAnswer = [];
@@ -6,11 +6,17 @@ var words = ['lucky', 'clover', 'drunk', 'ireland', 'march', 'gold', 'rainbow', 
     let wins = 0;
     let losses = 0;
     
+    
 
     
     const someFunction = () => {
-      let randNum = Math.floor(Math.random() * words.length);
-      let rngWord = words[randNum];
+      let rng = words[Math.floor(Math.random() * words.length)];
+      let rngWord = rng.word
+      let hint = rng.hint
+      console.log(rngWord)
+      console.log(hint)
+      
+      console.log(words.length)
       const remainingLetters = rngWord.length
       let underScore = [];
       let guesses = 6;
@@ -88,7 +94,7 @@ var words = ['lucky', 'clover', 'drunk', 'ireland', 'march', 'gold', 'rainbow', 
         change = document.getElementById("change").innerHTML += String.fromCharCode(event.keyCode);
         document.getElementById('randomword').innerHTML = x.join('');
       }
-    
+      document.getElementById('hint').innerHTML = hint
     };
   
     someFunction();
